@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			谁是卧底微信版
+		</title>
+		<link href="js/css.css" rel="stylesheet" type="text/css">
+		<style>
+			.window li
+			{
+				line-height: 1.5em;
+				padding: 15px
+			}
+		</style>
+	</head>
+	<body>
+		<div class="window">
+			<div class="line">
+				游戏人数
+			</div>
+			<ul>
+				<li>
+					1-5人，其中1人是卧底。<br/>
+					6-9人，其中2人是卧底。<br/>
+					10-13人，其中3人是卧底。<br/>
+					13-15人，其中4人是卧底。<br/>
+					16人及以上，其中5人是卧底。<br/>
+					当卧底有2人以上时，卧底的词有20%的几率抽到 "空白" 。
+				</li>
+			</ul>
+			<div class="line">
+				游戏规则
+			</div>
+			<ul>
+				<li>
+					1：每轮每个玩家只允许说一句话描述自己的身份词，既不能让卧底发现，也要给同伴暗示。<br/>
+					2：玩家发言完毕后开始投票，获票最多的玩家出局。<br/>
+					3：活着的平民小于等于2时，卧底胜利。
+				</li>
+			</ul>
+			<div class="line">
+				游戏经验
+			</div>
+			<ul>
+				<li>
+					每个人拿到自己的词语之后，需要从别人的描述中，快速的辨别自己是否是卧底。<br/>如果确认自己是卧底，需要快速确定平民是什么词语，描述时与平民类似，从而混淆视听。<br/>如果确认自己是平民，描述时必须慎重，不能让卧底察觉，同时也要给队友们暗示。
+				</li>
+			</ul>
+			<div class="line">
+				身份词
+			</div>
+			<ul>
+				<li>
+					例如：鼻子与嘴巴、胡子与眉毛、人民币与美元。
+				</li>
+			</ul>
+			<div class="btn gray back">
+				返回菜单
+			</div>
+		</div>
+		<script src="js/jquery.1.9.1.min.js">
+		</script>
+		<script src="js/wx.js">
+		</script>
+		<script>
+			$('.back').click(function()
+				{
+					location.href = 'guild.html';
+				});
+		</script>
+	</body>
+</html>

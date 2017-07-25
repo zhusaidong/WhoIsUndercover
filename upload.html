@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			谁是卧底微信版
+		</title>
+		<link href="js/css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="window upload">
+			<ul>
+				<li>
+					关键词一：<input class="input" id="key1" type="text" placeholder="请输入" />
+				</li>
+				<li>
+					关键词二：<input class="input" id="key2" type="text" placeholder="请输入" />
+				</li>
+			</ul>
+			<div class="btn green uploadBtn">
+				确定提交
+			</div>
+			<div class="btn gray back">
+				返回菜单
+			</div>
+		</div>
+		<script src="js/jquery.1.9.1.min.js">
+		</script>
+		<script src="js/wx.js">
+		</script>
+		<script>
+			$('.uploadBtn').click(function()
+				{
+					WX.upload();
+				});
+			$('.back').click(function()
+				{
+					location.href = 'guild.html';
+				});
+		</script>
+	</body>
+</html>

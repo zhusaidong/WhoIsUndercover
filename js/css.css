@@ -1,0 +1,160 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	font-family: 'lucida grande',tahoma,helvetica,arial,'bitstream vera sans',sans-serif;
+	-webkit-box-sizing: border-box;
+	max-width: 640px;
+}
+body
+{
+	background: #E1E0DE;
+}
+.window
+{
+	padding: 15px;
+	position: relative;
+}
+.center
+{
+	text-align: center
+}
+.home
+{
+	background: url("home.png") 15px center no-repeat;
+	padding-left: 45px;
+}
+.wordico
+{
+	background: url("word.png") 15px center no-repeat;
+	padding-left: 45px;
+}
+.gray
+{
+	color: #515151
+}
+
+.btn
+{
+	position: relative;
+	text-align: center;
+	border: 1px solid #6B6B6A;
+	border-radius: 8px;
+	height: 2em;
+	line-height: 2em;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 0.8em;
+}
+.btn.gray
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#ffffff), to(#d6d6d6));
+	color: #000;
+}
+.btn.gray:active
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#d6d6d6), to(#ffffff));
+	color: #000;
+}
+
+.btn.green
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#6DCD5E), to(#006C01))
+}
+.btn.green:active
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#006C01), to(#6DCD5E))
+}
+
+.btn.red
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#FF473A), to(#BE0101))
+}
+.btn.red:active
+{
+	background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#BE0101), to(#FF473A))
+}
+
+.window > ul
+{
+	position: relative;
+	margin: 0 0 0.8em 0;
+	padding: 0;
+	background: #fff;
+	border-radius: 8px;
+	border: 1px solid #B4B3B3;
+}
+ul > li
+{
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	list-style: none;
+	min-height: 39px;
+	line-height: 39px;
+	font-size: 15px;
+	padding: 0 1em;
+}
+.window > ul li:last-child
+{
+	border-bottom: none !important;
+}
+.line
+{
+	line-height: 1.5em;
+	font-size: 15px;
+	position: relative;
+	padding: 0 0px;
+}
+
+.index .btn
+{
+	margin-bottom: 0.7em;
+}
+.indexlogo
+{
+	margin-bottom: 0.5em;
+}
+.creater li img,.line img
+{
+	position: absolute;
+	right: 15px;
+	margin-top: 2px;
+}
+
+#memlist
+{
+}
+#memlist li.ss
+{
+	text-decoration: line-through;
+}
+.join input,.upload input
+{
+	border: none;
+	height: 25px;
+	position: absolute;
+	width: 50%;
+	margin-top: 5px;
+}
+.loading
+{
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	left: 50%;
+	top: 50%;
+	margin-top: -40px;
+	margin-left: -40px;
+	z-index: 100;
+	width: 80px;
+	height: 80px;
+	border-radius: 8px;
+	text-align: center;
+	color: #fff;
+	line-height: 80px;
+	font-size: 14px;
+}

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			谁是卧底微信版
+		</title>
+		<link href="js/css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="window index">
+			<div class="center indexlogo">
+				<img src="js/logo.jpg" width="60%" style="background:#fff"/>
+			</div>
+			<div class="btn green createGame">
+				创建游戏
+			</div>
+			<div class="btn green inRoom">
+				进入房间
+			</div>
+			<div class="btn gray guildGame">
+				谁是卧底怎么玩？
+			</div>
+			<ul>
+				<li style="line-height:1.8em;">
+					谁是卧底『聚会版』，主要用于
+					<b>
+						线下聚会
+					</b>时游戏，一人创建房间作为主持人，其余玩家加入房间开始游戏。
+					<br/>当前身份词数量：
+					<span id="wdnb">
+					</span>
+					<span id="net">
+					</span>
+				</li>
+			</ul>
+			<!--
+			<div class="line" style="text-align:center; font-family:Arial;font-size:12px">
+				©xxxxxxxxx
+			</div>
+			-->
+		</div>
+		<script src="js/jquery.1.9.1.min.js">
+		</script>
+		<script src="js/wx.js">
+		</script>
+		<script>
+			$(function()
+				{
+					WX.wordNum();
+				});
+			$('.createGame').click(function()
+				{
+					location.href = 'creater.html';
+				});
+			$('.guildGame').click(function()
+				{
+					location.href = 'guild.html';
+				});
+			$('.inRoom').click(function()
+				{
+					WX.joinCheck();
+				});
+			//WeixinJS
+			document.addEventListener('WeixinJSBridgeReady', function onBridgeReady()
+				{
+					WeixinJSBridge.invoke('getNetworkType',
+						{
+						},function(e)
+						{
+							if(e.err_msg.indexOf('wifi')==-1)
+							{
+								$('#net').html('，网络连接：非WIFI');
+							}else
+							{
+								$('#net').html('，网络连接：WIFI');
+							}
+						});
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			谁是卧底微信版
+		</title>
+		<link href="js/css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="window">
+			<ul>
+				<li class="teach">
+					游戏玩法说明
+				</li>
+			</ul>
+			<ul>
+				<li class="upload">
+					上传身份词
+				</li>
+			</ul>
+			<!--
+			<ul>
+				<li class="about">
+					关于我们
+				</li>
+				<li>
+					微信账号：xxxxxxxxxx
+				</li>
+			</ul>
+			-->
+			<div class="btn gray back">
+				返回菜单
+			</div>
+		</div>
+		<script src="js/jquery.1.9.1.min.js">
+		</script>
+		<script src="js/wx.js">
+		</script>
+		<script>
+			$('.back').click(function()
+				{
+					location.href = 'index.html';
+				});
+			$('.teach').click(function()
+				{
+					location.href = 'teach.html';
+				});
+			$('.upload').click(function()
+				{
+					location.href = 'upload.html';
+				});
+			$('.about').click(function()
+				{
+					location.href = 'about.html';
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no,width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			谁是卧底微信版
+		</title>
+		<link href="js/css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="window creater">
+			<ul>
+				<li class="home">
+					房间号：
+				</li>
+			</ul>
+			<div class="line">
+				房间成员
+			</div>
+			<ul id="memlist">
+			</ul>
+			<div class="btn green creatF5">
+				刷新成员
+			</div>
+			<div class="btn green creatSFC">
+				分配身份词
+			</div>
+			<div class="btn red creatOut">
+				退出房间
+			</div>
+		</div>
+		<script src="js/jquery.1.9.1.min.js">
+		</script>
+		<script src="js/wx.js">
+		</script>
+		<script>
+			$(function()
+				{
+					WX.createrRoomInfo();
+				})
+			$('.creatF5').click(function()
+				{
+					WX.creatF5();
+				});
+			$('.creatSFC').click(function()
+				{
+					WX.creatSFC();
+				});
+			$('.creatOut').click(function()
+				{
+					WX.creatOut();
+				});
+		</script>
+	</body>
+</html>
